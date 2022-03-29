@@ -4,7 +4,7 @@ kind: Namespace
 metadata:
   labels:
     owner: plaftorm-team
-  name: ns1-teamA
+  name: ns1-team-a
 
 ---
 
@@ -14,7 +14,7 @@ kind: Namespace
 metadata:
   labels:
     owner: plaftorm-team
-  name: ns2-teamB
+  name: ns2-team-b
 
 ---
 
@@ -24,5 +24,5 @@ kind: Namespace
 metadata:
   labels:
     owner: plaftorm-team
-  name: ns3-teamC
+  name: ns3-team-c
 

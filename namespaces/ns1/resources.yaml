@@ -5,7 +5,7 @@ metadata:
   labels:
     owner: platform-team
   name: hard-limit
-  namespace: ns1-teamA
+  namespace: ns1-team-a
 spec:
   containers:
       resources:
