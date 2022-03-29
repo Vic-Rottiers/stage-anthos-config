@@ -4,7 +4,7 @@ kind: K8sContainerRatios
 metadata:
   labels:
     owner: platform-team
-  name: quota-hard-limit
+  name: quota-hard-limit-b
 spec:
   containers:
       resources:
