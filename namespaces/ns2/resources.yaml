@@ -1,0 +1,17 @@
+# Resource quota's voor alle containers/deployments binnen namespace 2
+apiVersion: constraints.gatekeeper.sh/v1beta1
+kind: K8sContainerRatios
+metadata:
+  labels:
+    owner: platform-team
+  name: hard-limit
+  namespace: ns2-teamB
+spec:
+  containers:
+      resources:
+        limits:
+          cpu: 200m
+          memory: 300Mi
+        requests:
+          cpu: 50m
+          memory: 100Mi

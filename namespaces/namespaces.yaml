@@ -1,0 +1,28 @@
+#namespace 1 - Team A
+apiVersion: v1
+kind: Namespace
+metadata:
+  labels:
+    owner: plaftorm-team
+  name: ns1-teamA
+
+---
+
+#namespace 2 - Team B
+apiVersion: v1
+kind: Namespace
+metadata:
+  labels:
+    owner: plaftorm-team
+  name: ns2-teamB
+
+---
+
+#namespace 3 - Team C
+apiVersion: v1
+kind: Namespace
+metadata:
+  labels:
+    owner: plaftorm-team
+  name: ns3-teamC
+
