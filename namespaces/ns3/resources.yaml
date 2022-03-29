@@ -6,11 +6,10 @@ metadata:
     owner: platform-team
   name: quota-hard-limit-c
 spec:
-  containers:
-      resources:
-        limits:
-          cpu: 600m
-          memory: 800Mi
-        requests:
-          cpu: 400m
-          memory: 500Mi
+  resources:
+    limits:
+      cpu: 600m
+      memory: 800Mi
+    requests:
+      cpu: 400m
+      memory: 500Mi
