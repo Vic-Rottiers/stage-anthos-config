@@ -6,7 +6,8 @@ metadata:
 spec:
   match:
     labelSelector:
-      matchLabels: environment:prod
+      matchLabels:
+        environment: prod
   parameters:
     cpu: 200m
     memory: 1Gi
