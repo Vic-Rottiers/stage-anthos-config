@@ -4,25 +4,25 @@ kind: Namespace
 metadata:
   labels:
     owner: plaftorm-team
+    team: Kontich
   name: ns1-team-a
 
 ---
-
 #namespace 2 - Team B
 apiVersion: v1
 kind: Namespace
 metadata:
   labels:
     owner: plaftorm-team
+    team: Gent
   name: ns2-team-b
 
 ---
-
 #namespace 3 - Team C
 apiVersion: v1
 kind: Namespace
 metadata:
   labels:
     owner: plaftorm-team
+    team: US
   name: ns3-team-c
-
