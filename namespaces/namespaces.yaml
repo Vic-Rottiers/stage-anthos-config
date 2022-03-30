@@ -26,33 +26,32 @@ metadata:
     owner: plaftorm-team
     team: US
   name: team-c
+# ---
+# kind: NamespaceSelector
+# apiVersion: configmanagement.gke.io/v1
+# metadata:
+#   name: team-a-selector
+# spec:
+#   selector:
+#     matchLabels:
+#       app: team-a
 
----
-kind: NamespaceSelector
-apiVersion: configmanagement.gke.io/v1
-metadata:
-  name: team-a-selector
-spec:
-  selector:
-    matchLabels:
-      app: team-a
+# ---
+# kind: NamespaceSelector
+# apiVersion: configmanagement.gke.io/v1
+# metadata:
+#   name: team-b-selector
+# spec:
+#   selector:
+#     matchLabels:
+#       app: team-b
 
----
-kind: NamespaceSelector
-apiVersion: configmanagement.gke.io/v1
-metadata:
-  name: team-b-selector
-spec:
-  selector:
-    matchLabels:
-      app: team-b
-
----
-kind: NamespaceSelector
-apiVersion: configmanagement.gke.io/v1
-metadata:
-  name: team-c-selector
-spec:
-  selector:
-    matchLabels:
-      app: team-c
+# ---
+# kind: NamespaceSelector
+# apiVersion: configmanagement.gke.io/v1
+# metadata:
+#   name: team-c-selector
+# spec:
+#   selector:
+#     matchLabels:
+#       app: team-c
