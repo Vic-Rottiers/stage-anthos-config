@@ -11,7 +11,7 @@ metadata:
 
 ---
 #cfg-cluster2 labels geven
-kind: Cluster
+kind: v1
 apiVersion: clusterregistry.k8s.io/v1alpha1
 metadata:
   name: cfg-cluster2
