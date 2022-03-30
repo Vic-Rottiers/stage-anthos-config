@@ -1,4 +1,3 @@
-
 #cfg-cluster2 labels geven
 kind: Cluster
 apiVersion: clusterregistry.k8s.io/v1alpha1
@@ -7,4 +6,4 @@ metadata:
   labels:
     environment: acc
     location: eu-north
-    label:label
+    label: label
