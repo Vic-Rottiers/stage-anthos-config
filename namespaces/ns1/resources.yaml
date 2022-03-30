@@ -1,15 +1,12 @@
 # Resource quota's voor alle containers/deployments binnen namespace 1
 apiVersion: constraints.gatekeeper.sh/v1beta1
-kind: K8sContainerRatios
+kind: K8sContainerLimits
 metadata:
-  labels:
-    owner: platform-team
-  name: quota-hard-limit-a
+  name: container-must-have-limits
 spec:
-  resources:
-    limits:
-      cpu: 300m
-      memory: 500Mi
-    requests:
-      cpu: 100m
-      memory: 100Mi
+  match:
+    labelSelector:
+      matchLabels: environment:prod
+  parameters:
+    cpu: 200m
+    memory: 1Gi
