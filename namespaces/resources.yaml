@@ -3,9 +3,11 @@ apiVersion: constraints.gatekeeper.sh/v1beta1
 kind: K8sContainerLimits
 metadata:
   name: container-must-have-limits
-  annotations:
-    configsync.gke.io/cluster-name-selector: cluster-1,cluster-2,cluster-3
 spec:
+  match:
+    labelSelector:
+      matchLabels:
+        environment: prod
   parameters:
     cpu: 200m
     memory: 1Gi
