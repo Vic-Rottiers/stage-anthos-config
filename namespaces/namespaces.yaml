@@ -5,7 +5,7 @@ metadata:
   labels:
     owner: plaftorm-team
     team: Kontich
-  name: ns1-team-a
+  name: team-a
 
 ---
 #namespace 2 - Team B
@@ -15,7 +15,7 @@ metadata:
   labels:
     owner: plaftorm-team
     team: Gent
-  name: ns2-team-b
+  name: team-b
 
 ---
 #namespace 3 - Team C
@@ -25,4 +25,34 @@ metadata:
   labels:
     owner: plaftorm-team
     team: US
-  name: ns3-team-c
+  name: team-c
+
+---
+kind: NamespaceSelector
+apiVersion: configmanagement.gke.io/v1
+metadata:
+  name: team-a-selector
+spec:
+  selector:
+    matchLabels:
+      app: team-a
+
+---
+kind: NamespaceSelector
+apiVersion: configmanagement.gke.io/v1
+metadata:
+  name: team-b-selector
+spec:
+  selector:
+    matchLabels:
+      app: team-b
+
+---
+kind: NamespaceSelector
+apiVersion: configmanagement.gke.io/v1
+metadata:
+  name: team-c-selector
+spec:
+  selector:
+    matchLabels:
+      app: team-c
