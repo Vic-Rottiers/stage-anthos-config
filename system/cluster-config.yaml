@@ -18,7 +18,7 @@ metadata:
   labels:
     environment: acc
     location: eu-north
-    label: "label"
+    label:label
 ---
 #cfg-cluster3 labels geven
 kind: Cluster
