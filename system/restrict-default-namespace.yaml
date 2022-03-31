@@ -3,9 +3,7 @@ kind: K8sRestrictNamespaces
 metadata:
   name: restrict-default-namespace-use
 spec:
-  enforcementAction: dryrun
+  enforcementAction: deny
   parameters:
     restrictedNamespaces:
     - default
-    - kube-system
-    - kube-public
