@@ -6,5 +6,4 @@ apiVersion: clusterregistry.k8s.io/v1alpha1
 metadata:
   name: cfg-cluster1
   labels:
-    environment: prod
     location: eu-west

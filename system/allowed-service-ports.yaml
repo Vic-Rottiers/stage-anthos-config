@@ -1,3 +1,4 @@
+# regelmaat en gelijkheid bij de benamingen van de verschillende service ports die services aanmaken
 apiVersion: constraints.gatekeeper.sh/v1beta1
 kind: AllowedServicePortName
 metadata:
@@ -13,8 +14,7 @@ spec:
   parameters:
     prefixes:
       - http-
-      - http2-
-      - grpc-
+      - https-
       - mongo-
       - redis-
       - tcp-
